@@ -4,7 +4,7 @@
 127.0.0.1 localhost
 
 # Ansible config
-{{ ansible_default_ipv4.address }} {{ ansible_hostname }}
+{{ ansible_default_ipv4.address }} {{ ansible_hostname }} {{ ansible_hostname }}.{{ devbox.domain }}
 
 # Playbook
 {% if hosts is defined %}
